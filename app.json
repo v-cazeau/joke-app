@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "joke-app",
-    "slug": "joke-app",
+    "name": "Got Jokes?",
+    "slug": "got-jokes",
+    "privacy": "public",
+    "description": "Spread smiles and embrace laughter anytime, anywhere with the 'Got Jokes' app.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +17,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vcazeau.gotjokes"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.vcazeau.gotjokes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ee758aee-380a-4b61-9f47-d00005370e27"
+      }
     }
   }
 }
